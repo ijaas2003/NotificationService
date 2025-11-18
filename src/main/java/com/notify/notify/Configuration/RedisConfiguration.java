@@ -28,7 +28,6 @@ public class RedisConfiguration {
     jedisPoolConfig.setMaxTotal(20);
     jedisPoolConfig.setMinIdle(2);
     jedisPoolConfig.setBlockWhenExhausted(true);
-
     return new JedisPool(jedisPoolConfig, host, port, timeout, password);
   }
 }
